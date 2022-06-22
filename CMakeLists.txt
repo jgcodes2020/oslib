@@ -14,3 +14,8 @@ target_include_directories(oslib PUBLIC
 )
 target_compile_features(oslib PUBLIC cxx_std_20)
 target_link_libraries(oslib PUBLIC ${CMAKE_DL_LIBS})
+
+add_executable(test0
+  "test/test0.cpp"
+)
+target_link_libraries(test0 PUBLIC oslib)

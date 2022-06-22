@@ -20,7 +20,8 @@ namespace oslib {
       }
       const char* err = dlerror();
       throw std::runtime_error(err);
-    }()) {}
+    }()),
+    owning() {}
   
   shared_library::~shared_library() {
     if (dlclose(handle)) {

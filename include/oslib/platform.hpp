@@ -1,3 +1,5 @@
+#ifndef OSLIB_PLATFORM_HPP
+#define OSLIB_PLATFORM_HPP
 #if defined(__linux__)
 #define OSLIB_PLATFORM_POSIX
 #define OSLIB_PLATFORM_LINUX
@@ -8,4 +10,5 @@
 #define OSLIB_PLATFORM_POSIX
 #elif defined(_WIN32)
 #define OSLIB_PLATFORM_WIN32
+#endif
 #endif
